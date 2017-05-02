@@ -1,2 +1,8 @@
+<div class = "upload-border">
 <%= image_tag(@post.image.url(:medium)) %>
+</div>
+<br>
+<div class = "post-description">
 <%= @post.description %>
+</div>
+<%= link_to 'Delete Post', post_path(@post), method: :delete, class:'delete' %>

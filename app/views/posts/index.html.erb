@@ -1,1 +1,11 @@
-<h1> Welcome to InstaClone! </h1>
+<% @posts.each do |i| %>
+
+  <div class = "border">
+    <%= image_tag i.image.url(:medium) %>
+
+    <br>
+
+    <a><%= i.description %></a>
+
+  </div>
+<% end %>
