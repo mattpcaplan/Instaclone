@@ -2,7 +2,7 @@
 @import "bootstrap";
 
 body {
-  background: rgb(234, 234, 234);
+  background: rgb(223, 223, 223);
   // font-size: 22px;
   // font-weight: bold;
 }
@@ -15,4 +15,8 @@ body {
 .post-description {
   font-size: 22px;
   text-align: center;
+}
+
+#choose_file {
+  right: 200px;
 }

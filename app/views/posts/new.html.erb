@@ -3,9 +3,10 @@
 <hr>
 
 <%= form_for @post, html: { multipart: true } do |f| %>
-  <%= f.label :image %>
-  <%= f.file_field :image %>
-
+  <div id="choose_file">
+    <%= f.label :image, required: true %>
+    <%= f.file_field :image, required:true %>
+  </div>
   <br>
   <%= f.label :description %>
   <%= f.text_area :description %>

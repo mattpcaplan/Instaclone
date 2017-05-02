@@ -9,6 +9,12 @@ class PostsController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to new_post_path
+  end
+
   def index
     @posts = Post.all
   end

@@ -5,4 +5,8 @@
 <div class = "post-description">
 <%= @post.description %>
 </div>
+<%= link_to 'Back to Gallery', root_path %>
+|
 <%= link_to 'Delete Post', post_path(@post), method: :delete, class:'delete' %>
+|
+<%= link_to 'Update Post', edit_post_path(@post) %>
